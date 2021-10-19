@@ -43,3 +43,10 @@ npm run dev
 #4.5
     export default sth -> sth만 export 함.
     여러개를 export 하려면 export sth 으로 하나하나 export 붙여주고, 받을 때 {sth1, sth2} 로 받음
+
+#5.5
+    pug : html 을 쓰지 않고 깔끔하게 코드를 쓸 수 있게 도와주는 프로그램
+    extends base.pug -> base.pug 파일을 그대로 가져옴
+    title #{pageTitle} : res.render("home", {pageTitle : "Home"}) 을 통해 인자를 넘겨줌.
+    footer : include를 통해서 모든 pug 파일에 넣어주기 가능.
+    base.pug / block content STH  -> extends 한 파일에서 STH 에 값을 넣어서 사용 가능.

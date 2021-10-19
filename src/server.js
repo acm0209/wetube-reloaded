@@ -12,8 +12,8 @@ const logger = morgan("dev");
 app.set("view engine", "pug");
 app.set("views", process.cwd() + "/src/views");
 app.use(logger);
-app.use("/",globalRouter);
 app.use("/videos",videoRouter);
+app.use("/",globalRouter);
 app.use("/users",userRouter);
 
 const handleListening = () =>
