@@ -50,3 +50,7 @@ npm run dev
     title #{pageTitle} : res.render("home", {pageTitle : "Home"}) 을 통해 인자를 넘겨줌.
     footer : include를 통해서 모든 pug 파일에 넣어주기 가능.
     base.pug / block content STH  -> extends 한 파일에서 STH 에 값을 넣어서 사용 가능.
+
+#5.10
+    each x in y  : y배열에서 가져온 x. 파이썬과 비슷. y는 render함수를 호출할 때 함께 전해주어야 하는 parameter.
+    mixin : information 을 받는 footer라 생각하면 편함. -> include mixins 를 해 줘야 함.
