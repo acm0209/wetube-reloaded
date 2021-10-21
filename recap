@@ -54,3 +54,9 @@ npm run dev
 #5.10
     each x in y  : y배열에서 가져온 x. 파이썬과 비슷. y는 render함수를 호출할 때 함께 전해주어야 하는 parameter.
     mixin : information 을 받는 footer라 생각하면 편함. -> include mixins 를 해 줘야 함.
+
+#6.4
+    post : backend 와 작용하기 위함. 
+    req.params 는 (/:id(\\d+)) 를 의미함.(우리 내용에서는)
+    req.body : form 에 접근함. middleware를 필요로 함. app.use(express.urlencoded({extended : true}));
+    req.body name 에 접근하려면 form 안에서 name = sth 이리고 정의해야 한다
