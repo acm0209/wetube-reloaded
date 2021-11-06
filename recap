@@ -62,26 +62,39 @@ npm run dev
     req.body name 에 접근하려면 form 안에서 name = sth 이리고 정의해야 한다
 
 
-1. 몽고 사용하기
-> mongo
+#6 mongo 사용 방법
+    1. 몽고 사용하기
+    > mongo
 
-2. 내가 가진 db 보기
-> show dbs
+    2. 내가 가진 db 보기
+    > show dbs
 
-3. 현재 사용 중인 db 확인
-> db
+    3. 현재 사용 중인 db 확인
+    > db
 
-4. 사용할 db 선택하기
-> use dbName
-(현재 수업에서는 `use wetube`)
+    4. 사용할 db 선택하기
+    > use dbName
+    (현재 수업에서는 `use wetube`)
 
-5. db 컬렉션 보기
-> show collections
+    5. db 컬렉션 보기
+    > show collections
 
-6. db 컬렉션 안에 documents 보기
-> db.collectionName.find()
-(현재 수업에서는 `db.videos.find()`)
+    6. db 컬렉션 안에 documents 보기
+    > db.collectionName.find()
+    (현재 수업에서는 `db.videos.find()`)
 
-7. db 컬렉션 안에 documents 모두 제거
-> db.collectionName.remove({})
-(현재 수업에서는 `db.videos.find({})`)
+    7. db 컬렉션 안에 documents 모두 제거
+    > db.collectionName.remove({})
+    (현재 수업에서는 `db.videos.find({})`)
+
+#7.11
+    app.use(session({
+        ~~~
+    }))
+    브라우저랑 상호작용 할 때마다 session이라는 middlewre가 브라우저에 cookie 전송
+    cookie : backend가 브라우저에 주는 정보, 규칙이 있기 때문에 backend에 req가 있을 때마다 req에 cookie를 덫붙임.
+    sessionID 는 cookie에 저장되고 backend에도 저장된다.
+    locals : object, 모든 pug template에서 접근 가능.( import 없이)
+
+
+    
